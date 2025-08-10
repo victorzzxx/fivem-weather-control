@@ -17,8 +17,6 @@
 
 The script hooks into ESX menus to provide a user interface for selecting time and weather presets. It uses native FiveM functions to override the server clock and weather, applying changes immediately and persisting them until changed again.
 
-Time can be frozen to maintain a specific hour and minute, ensuring consistent in-game conditions. Weather types include clear, rainy, foggy, snowy, and more, allowing immersive environment control tailored to your server’s needs.
-
 ```lua
 currentHour = 12
 currentMinute = 0
